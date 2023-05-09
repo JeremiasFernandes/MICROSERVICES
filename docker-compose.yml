@@ -37,7 +37,7 @@ services:
                         
         app-principal:
                 build:
-                        context: ./APIPRINCIPAL
+                        context: ./APIPRINCIPAL/atividade-api
                         dockerfile: Dockerfile-api1
                 depends_on:
                         mysql-8:
