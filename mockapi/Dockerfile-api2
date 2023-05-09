@@ -1,0 +1,11 @@
+FROM openjdk
+
+WORKDIR /app
+
+
+COPY target/mock-0.0.1-SNAPSHOT.jar /app/spring-app-api-mock.jar
+
+
+ENTRYPOINT [ "java", "-jar", "spring-app-api-mock.jar" ]
+
+EXPOSE 8090

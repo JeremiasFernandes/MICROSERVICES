@@ -1,0 +1,24 @@
+
+spring:
+    jpa:
+        properties:
+            hibernate:
+            jdbc:
+            non_conextual_creation: true
+        hibernate:
+          ddl-auto: 'update'
+    datasource:
+        username: root
+        password: Admin123@
+        url: jdbc:mysql://127.0.0.1:3306/Exercicio?createDatabaseIfNotExist=true
+
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: rabbitmq
+        password: rabbitmq
+server:
+  port: 8080
+# springdoc:
+#   api-docs:
+#     path: api-docsb

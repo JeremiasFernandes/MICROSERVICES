@@ -1,0 +1,11 @@
+FROM openjdk
+
+WORKDIR /app
+
+
+COPY demo/demo-0.0.1-SNAPSHOT.jar /app/spring-app-api-principal.jar
+
+
+ENTRYPOINT [ "java", "-jar", "spring-app-api-principal.jar" ]
+
+EXPOSE 8080
