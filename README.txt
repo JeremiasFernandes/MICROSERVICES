@@ -1,8 +1,10 @@
 Ambas as API's estão com Spring Boot 3.05, e Java 17. Para o gerenciamento de depêndicias foi utilizado o Maven.
 
-Bancos de dados utilizados neste exercício foi o MySQL rodando localmente. Para a mensageria foi-se utilizado o broker RabbitMQ.
+É necessário conter o Docker na máquina.
 
-A conexão com o banco de dados e com a mensageria é configurada através do arquivo application.yml, contido na pasta resources.
+Bancos de dados utilizados neste exercício foi o MySQL 8 rodando em um container docker. Para a mensageria foi-se utilizado o broker RabbitMQ também rodando em um container docker.
+
+A conexão com o banco de dados e com a mensageria é configurada através do arquivo application.yml, contido na pasta resources das respectivas API's. Porém, alguns parâmetros das configurações são configurados via docker-compose.
 
 
 
